@@ -2,7 +2,7 @@
 
 > 在 VS Code 中打开 `.scad` 文件，点击状态栏按钮即可导出为 STEP 格式，无需离开编辑器。
 
-![插件预览](images/overview.png)
+![插件预览](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/images/overview.png?raw=true)
 
 ## 功能
 
@@ -30,7 +30,7 @@
 3. 选择本插件 `.vsix` 文件
 4. 安装完成后，**需要重载窗口**（Reload Window）
 
-![从VSIX安装](images/install-from-vsix.png)
+![从VSIX安装](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/images/install-from-vsix.png?raw=true)
 
 ### 从源码安装（开发调试）
 
@@ -62,7 +62,7 @@ npx vsce package
 2. 在搜索框输入 `csg2stp`
 3. 在找到的 **CSG to STP: Executable Path** 配置项中填入路径
 
-![插件设置](images/settings.png)
+![插件设置](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/images/settings.png?raw=true)
 
 或者直接编辑 `settings.json`：
 
@@ -80,7 +80,7 @@ npx vsce package
 
 打开一个 `.scad` 文件并确保它是当前激活标签页，在 VS Code 底部状态栏点击 **导出 STEP** 按钮即可。
 
-![状态栏按钮](images/statusbar-button.png)
+![状态栏按钮](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/images/statusbar-button.png?raw=true)
 
 ---
 
@@ -88,7 +88,7 @@ npx vsce package
 
 转换完成后，VS Code 右下角会弹出成功通知：
 
-![导出成功提示](images/export-success.png)
+![导出成功提示](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/images/export-success.png?raw=true)
 
 生成的 `.stp` 文件将保存在与 `.scad` 文件 **相同的目录** 下，文件名相同但后缀为 `.stp`。
 
@@ -178,4 +178,4 @@ npm test
 
 ## 许可证
 
-GPL 3.0 — 详见 [LICENSE](LICENSE) 文件。
+GPL 3.0 — 详见 [LICENSE](https://github.com/lastmustname804-bit/csg2stp-vscode/blob/main/LICENSE?raw=true) 文件。
