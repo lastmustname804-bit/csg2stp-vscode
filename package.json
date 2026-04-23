@@ -1,0 +1,54 @@
+{
+  "name": "csg2stp",
+  "displayName": "csg2stp — OpenSCAD to STEP",
+  "description": "Export OpenSCAD files to STEP format via csg2stp",
+  "version": "1.0.0",
+  "publisher": "lastmustname804-bit",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "openscad",
+    "step",
+    "csg2stp",
+    "cad",
+    "export"
+  ],
+  "activationEvents": [
+    "onLanguage:scad",
+    "workspaceContains:**/*.scad"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "csg2stp.exportStep",
+        "title": "Export to STEP",
+        "category": "csg2stp"
+      }
+    ],
+    "configuration": {
+      "title": "csg2stp",
+      "properties": {
+        "csg2stp.executablePath": {
+          "type": "string",
+          "default": "",
+          "description": "Path to the csg2stp executable (e.g. C:\\csg2stp\\csg2stp.bat or /usr/local/bin/csg2stp.sh)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  }
+}
